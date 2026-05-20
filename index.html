@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Lunavita.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LUNAVITA CARE - Soins infirmiers professionnels à domicile. Fatima Ezahraa, assistante infirmière diplômée, disponible pour vos soins à domicile." />
+    <meta name="keywords" content="infirmière à domicile, soins infirmiers, injections, prises de sang, perfusions, Casablanca, soins médicaux" />
+    <title>LUNAVITA CARE - Soins Infirmiers à Domicile</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif'],
+              montserrat: ['Montserrat', 'sans-serif'],
+              sora: ['Sora', 'sans-serif'],
+            },
+            colors: {
+              petrol: '#0A4D68',
+              'petrol-dark': '#053347',
+              wellness: '#4ADE80',
+              'wellness-dark': '#22C55E',
+              'wellness-light': '#86EFAC',
+            },
+            backgroundImage: {
+              'gradient-premium': 'linear-gradient(135deg, #0A4D68 0%, #4ADE80 100%)',
+              'gradient-subtle': 'linear-gradient(180deg, rgba(10,77,104,0.95) 0%, rgba(74,222,128,0.1) 100%)',
+            },
+            screens: {
+              xs: '375px',
+              sm: '480px',
+              md: '640px',
+              lg: '768px',
+              xl: '1024px',
+              '2xl': '1280px',
+              '3xl': '1440px',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
