@@ -58,16 +58,16 @@ const Navbar = () => {
   };
 
   const mobileMenuVariants = {
-    hidden: { opacity: 0, y: '100%' },
+    hidden: { opacity: 0, x: '100%' },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.35, ease: [0.32, 0.72, 0, 1] },
+      x: 0,
+      transition: { duration: 0.4, ease: 'easeInOut' },
     },
     exit: {
       opacity: 0,
-      y: '100%',
-      transition: { duration: 0.28, ease: 'easeIn' },
+      x: '100%',
+      transition: { duration: 0.3, ease: 'easeInOut' },
     },
   };
 
@@ -110,19 +110,19 @@ const Navbar = () => {
             : 'bg-white/98 backdrop-blur-xl border-b border-petrol/10 shadow-xl shadow-petrol/10'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
+        <div className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-[4.5rem] xs:h-20">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="shrink-0"
+              className="flex-shrink-0"
             >
               <Link to="home" smooth duration={800} className="cursor-pointer block">
                 <img
                   src="/Lunavita.svg"
                   alt="LUNAVITA"
-                  className={`h-8 sm:h-10 lg:h-12 w-auto transition-all duration-300 ${
+                  className={`h-10 xs:h-19 sm:h-20 w-auto transition-all duration-300 ${
                     onDarkNav ? 'brightness-0 invert drop-shadow-lg' : ''
                   }`}
                 />
@@ -178,118 +178,104 @@ const Navbar = () => {
               </a>
             </motion.div>
 
-            <div className="flex items-center gap-2 lg:hidden">
-            <a
-              href="https://wa.me/212629426183"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 bg-wellness text-petrol-dark font-bold text-[11px] px-3 py-1.5 rounded-full font-montserrat shadow-md active:scale-95 transition-transform"
-            >
-              RDV
-            </a>
-
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={isMobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
-              className={`lg:hidden p-2 rounded-lg transition-all duration-300 ${
+              className={`lg:hidden p-2.5 rounded-xl transition-all duration-300 ${
                 onDarkNav
-                  ? 'text-white bg-white/10 border border-white/20'
-                  : 'text-petrol-dark bg-petrol/5 border border-petrol/10'
+                  ? 'text-white bg-white/10 hover:bg-white/20 border border-white/20'
+                  : 'text-petrol-dark bg-petrol/5 hover:bg-petrol/10 border border-petrol/10'
               }`}
             >
-              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
-            </div>
           </div>
         </div>
       </motion.nav>
 
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="fixed inset-0 z-[55] bg-black/50 backdrop-blur-sm lg:hidden"
+          <motion.div
+            variants={mobileMenuVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="fixed inset-0 z-[60] lg:hidden"
+          >
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: 'url("/3.jpg")' }}
             />
-            <motion.div
-              variants={mobileMenuVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="fixed inset-x-0 bottom-0 z-[60] lg:hidden rounded-t-3xl bg-petrol-dark border-t border-white/15 shadow-[0_-8px_40px_rgba(0,0,0,0.4)] max-h-[85dvh] overflow-y-auto"
-            >
-              <div className="w-10 h-1 bg-white/25 rounded-full mx-auto mt-3 mb-4" />
-              <div className="px-5 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
-                <div className="flex items-center justify-between mb-5">
-                  <img
-                    src="/Lunavita.svg"
-                    alt="LUNAVITA"
-                    className="h-8 w-auto brightness-0 invert"
-                  />
-                  <button
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-white p-2 rounded-lg bg-white/10"
-                    aria-label="Fermer"
-                  >
-                    <X size={20} />
-                  </button>
-                </div>
-
-                <nav className="space-y-1">
-                  {menuItems.map((item, index) => (
-                    <motion.div
-                      key={item.to}
-                      custom={index}
-                      variants={itemVariants}
-                      initial="hidden"
-                      animate="visible"
-                    >
-                      <Link
-                        to={item.to}
-                        smooth
-                        duration={800}
-                        offset={-70}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className={`flex items-center justify-between py-3 px-3 rounded-xl font-montserrat text-base font-medium transition-all cursor-pointer ${
-                          activeSection === item.to
-                            ? 'text-wellness bg-white/10'
-                            : 'text-white/90 active:bg-white/5'
-                        }`}
-                      >
-                        {item.name}
-                        {activeSection === item.to && (
-                          <span className="w-1.5 h-1.5 rounded-full bg-wellness" />
-                        )}
-                      </Link>
-                    </motion.div>
-                  ))}
-                </nav>
-
-                <div className="mt-6 pt-5 border-t border-white/10 space-y-2">
-                  <a
-                    href="tel:+212629426183"
-                    className="flex items-center justify-center gap-2 w-full text-white/90 font-montserrat text-sm py-2.5 rounded-xl border border-white/20"
-                  >
-                    <Phone className="w-4 h-4" />
-                    06 29 42 61 83
-                  </a>
-                  <a
-                    href="https://wa.me/212629426183"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full bg-wellness text-petrol-dark font-bold py-3 rounded-xl text-center font-montserrat text-sm shadow-lg active:scale-[0.98] transition-transform"
-                  >
-                    Prendre rendez-vous
-                  </a>
-                </div>
+            <div className="absolute inset-0 bg-petrol-dark/92 backdrop-blur-sm" />
+            <div className="relative flex flex-col h-full p-5 xs:p-6">
+              <div className="flex items-center justify-between mb-10">
+                <img
+                  src="/Lunavita.svg"
+                  alt="LUNAVITA"
+                  className="h-11 w-auto brightness-0 invert"
+                />
+                <button
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-white p-2.5 rounded-xl bg-white/10 border border-white/20"
+                  aria-label="Fermer"
+                >
+                  <X size={24} />
+                </button>
               </div>
-            </motion.div>
-          </>
+
+              <div className="flex-1 flex flex-col justify-center space-y-2">
+                {menuItems.map((item, index) => (
+                  <motion.div
+                    key={item.to}
+                    custom={index}
+                    variants={itemVariants}
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    <Link
+                      to={item.to}
+                      smooth
+                      duration={800}
+                      offset={-90}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className={`block py-3 px-4 rounded-xl font-montserrat text-xl font-semibold transition-all duration-300 cursor-pointer ${
+                        activeSection === item.to
+                          ? 'text-wellness bg-white/15'
+                          : 'text-white hover:text-wellness hover:bg-white/10'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="mt-8 space-y-3"
+              >
+                <a
+                  href="tel:+212629426183"
+                  className="flex items-center justify-center gap-2 w-full text-white font-montserrat font-semibold py-3 rounded-full border border-white/30"
+                >
+                  <Phone className="w-5 h-5" />
+                  06 29 42 61 83
+                </a>
+                <a
+                  href="https://wa.me/212629426183"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-gradient-to-r from-wellness to-wellness-dark text-petrol-dark font-bold px-6 py-4 rounded-full text-center font-montserrat text-lg shadow-xl"
+                >
+                  Prendre rendez-vous
+                </a>
+              </motion.div>
+            </div>
+          </motion.div>
         )}
       </AnimatePresence>
     </>

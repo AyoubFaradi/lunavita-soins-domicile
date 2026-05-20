@@ -10,11 +10,28 @@ const WhatsAppButton = () => {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.5, delay: 1 }}
-      whileTap={{ scale: 0.92 }}
-      className="fixed z-50 bg-wellness text-petrol-dark p-2.5 sm:p-4 rounded-full shadow-[0_4px_20px_rgba(74,222,128,0.5)] md:hover:scale-110 transition-transform duration-300 bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] sm:bottom-6 sm:right-6"
-      aria-label="Contacter sur WhatsApp"
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      className="fixed bottom-4 xs:bottom-6 right-4 xs:right-6 z-50 bg-gradient-to-r from-wellness to-wellness-dark text-white p-3 xs:p-4 rounded-full shadow-2xl shadow-wellness/40 hover:shadow-wellness/60 transition-all duration-300"
+      style={{ boxShadow: '0 0 0 0 rgba(74, 222, 128, 0.7)' }}
     >
-      <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
+      <motion.div
+        animate={{
+          boxShadow: [
+            '0 0 0 0 rgba(74, 222, 128, 0.7)',
+            '0 0 0 15px rgba(74, 222, 128, 0)',
+            '0 0 0 0 rgba(74, 222, 128, 0)',
+          ],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          repeatDelay: 1,
+        }}
+        className="relative"
+      >
+        <MessageCircle className="w-5 xs:w-6 h-5 xs:h-6" />
+      </motion.div>
     </motion.a>
   );
 };
