@@ -136,7 +136,7 @@ const FAQ = () => {
             Vous ne trouvez pas votre réponse?
           </p>
           <a
-            href="https://wa.me/212629426183"
+            href="https://wa.me/212690204408"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-wellness to-wellness-dark text-petrol-dark font-semibold px-5 xs:px-6 sm:px-8 py-3 xs:py-4 rounded-full hover:shadow-2xl hover:shadow-wellness/40 transition-all duration-300 transform hover:scale-105 font-montserrat text-sm xs:text-base sm:text-lg w-full sm:w-auto"

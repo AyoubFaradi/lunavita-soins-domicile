@@ -91,7 +91,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row items-stretch justify-center gap-2 sm:gap-2.5 w-full max-w-[17.5rem] xs:max-w-xs sm:max-w-md mx-auto md:max-w-none md:gap-5 md:w-auto"
           >
             <a
-              href="https://wa.me/212629426183"
+              href="https://wa.me/212690204408"
               target="_blank"
               rel="noopener noreferrer"
               className="group touch-manipulation inline-flex items-center justify-center gap-1.5 md:gap-3 rounded-xl md:rounded-full bg-gradient-to-r from-wellness to-wellness-dark text-petrol-dark font-semibold md:font-bold tracking-wide md:tracking-normal px-4 py-2.5 md:px-8 md:py-4 text-xs md:text-base leading-tight shadow-[0_2px_12px_rgba(74,222,128,0.35)] md:shadow-[0_4px_24px_rgba(74,222,128,0.45)] border border-white/10 md:border-transparent transition-all duration-300 ease-out hover:brightness-105 hover:shadow-[0_4px_20px_rgba(74,222,128,0.45)] md:hover:shadow-[0_6px_32px_rgba(74,222,128,0.55)] hover:scale-[1.01] active:scale-[0.97] md:hover:scale-[1.03] md:active:scale-[0.98] font-montserrat w-full sm:flex-1 sm:min-w-0 md:w-auto min-h-0 md:min-h-[48px]"

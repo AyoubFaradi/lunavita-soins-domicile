@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: <MessageCircle className="w-5 h-5" />, href: 'https://wa.me/212629426183', name: 'WhatsApp' },
+    { icon: <MessageCircle className="w-5 h-5" />, href: 'https://wa.me/212690204408', name: 'WhatsApp' },
   ];
 
   const containerVariants = {
@@ -121,14 +121,14 @@ const Footer = () => {
             <h3 className="font-sora font-bold text-base xs:text-lg mb-4 xs:mb-6">Contact</h3>
             <div className="space-y-2 xs:space-y-3">
               <a
-                href="https://wa.me/212629426183"
+                href="https://wa.me/212690204408"
                 className="flex items-center gap-2 xs:gap-3 text-white/70 font-montserrat text-xs xs:text-sm hover:text-wellness transition-colors duration-300"
               >
                 <Phone className="w-3 xs:w-4 h-3 xs:h-4" />
-                <span>06 29 42 61 83</span>
+                <span>06 90 20 44 08</span>
               </a>
               <a
-                href="https://wa.me/212629426183"
+                href="https://wa.me/212690204408"
                 className="flex items-center gap-2 xs:gap-3 text-white/70 font-montserrat text-xs xs:text-sm hover:text-wellness transition-colors duration-300"
               >
                 <MessageCircle className="w-3 xs:w-4 h-3 xs:h-4" />

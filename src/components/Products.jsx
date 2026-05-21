@@ -142,7 +142,7 @@ const Products = () => {
                     <span className="text-2xl font-sora font-bold text-petrol">{product.price}</span>
                   </div>
                   <a
-                    href="https://wa.me/212629426183"
+                    href="https://wa.me/212690204408"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group/btn flex items-center gap-2 bg-gradient-to-r from-petrol to-petrol-dark text-white px-4 py-2 rounded-full hover:shadow-lg hover:shadow-petrol/30 transition-all duration-300 transform hover:scale-105"
@@ -165,7 +165,7 @@ const Products = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/212629426183"
+            href="https://wa.me/212690204408"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-wellness to-wellness-dark text-petrol-dark font-semibold px-8 py-4 rounded-full hover:shadow-2xl hover:shadow-wellness/40 transition-all duration-300 transform hover:scale-105 font-montserrat"

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
@@ -160,16 +161,16 @@ const Navbar = () => {
               className="hidden lg:flex items-center gap-3"
             >
               <a
-                href="tel:+212629426183"
+                href="tel:+212690204408"
                 className={`hidden xl:inline-flex items-center gap-2 font-montserrat text-sm font-semibold transition-colors ${
                   onDarkNav ? 'text-white/90 hover:text-wellness' : 'text-petrol hover:text-wellness-dark'
                 }`}
               >
                 <Phone className="w-4 h-4" />
-                06 29 42 61 83
+                06 90 20 44 08
               </a>
               <a
-                href="https://wa.me/212629426183"
+                href="https://wa.me/212690204408"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-wellness to-wellness-dark text-petrol-dark font-bold px-5 py-2.5 rounded-full hover:shadow-2xl hover:shadow-wellness/40 transition-all duration-300 transform hover:scale-105 font-montserrat text-sm shadow-lg"
@@ -259,14 +260,14 @@ const Navbar = () => {
                 className="mt-8 space-y-3"
               >
                 <a
-                  href="tel:+212629426183"
+                  href="tel:+212690204408"
                   className="flex items-center justify-center gap-2 w-full text-white font-montserrat font-semibold py-3 rounded-full border border-white/30"
                 >
                   <Phone className="w-5 h-5" />
-                  06 29 42 61 83
+                  06 90 20 44 08
                 </a>
                 <a
-                  href="https://wa.me/212629426183"
+                  href="https://wa.me/212690204408"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-gradient-to-r from-wellness to-wellness-dark text-petrol-dark font-bold px-6 py-4 rounded-full text-center font-montserrat text-lg shadow-xl"
