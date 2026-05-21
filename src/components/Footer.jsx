@@ -62,7 +62,7 @@ const Footer = () => {
           <motion.div variants={itemVariants} className="space-y-4 xs:space-y-6">
             <img src="/Lunavita.svg" alt="LUNAVITA" className="h-10 xs:h-12 w-auto brightness-0 invert" />
             <p className="text-white/70 font-montserrat text-xs xs:text-sm leading-relaxed">
-              LUNAVITA CARE - Soins infirmiers professionnels à domicile. Fatima Ezahraa, assistante infirmière dévouée à votre bien-être.
+              LUNAVITA CARE - Soins infirmiers professionnels à domicile. Assistante infirmière dévouée à votre bien-être.
             </p>
             <div className="flex items-center gap-2 xs:gap-3">
               {socialLinks.map((social, index) => (

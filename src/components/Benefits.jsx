@@ -139,7 +139,7 @@ const Benefits = () => {
               Soins Professionnels Certifiés
             </h3>
             <p className="text-white/80 font-montserrat text-sm xs:text-base max-w-2xl mx-auto mb-4 xs:mb-6 px-2 xs:px-0">
-              Tous nos soins sont réalisés par Fatima Ezahraa, assistante infirmière diplômée, dans le respect des normes médicales les plus strictes.
+              Tous nos soins sont réalisés par notre assistante infirmière diplômée, dans le respect des normes médicales les plus strictes.
             </p>
             <a
               href="https://wa.me/212690204408"

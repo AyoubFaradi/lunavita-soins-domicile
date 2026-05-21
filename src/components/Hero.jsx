@@ -81,7 +81,7 @@ const Hero = () => {
           >
             Une équipe qualifiée disponible pour vous accompagner à domicile avec professionnalisme et bienveillance.
             <span className="block mt-2 xs:mt-3 text-wellness-light font-medium">
-              Fatima Ezahraa vous accompagne avec expertise, douceur et soins de qualité.
+              Notre assistante infirmière vous accompagne avec expertise, douceur et soins de qualité.
             </span>
           </motion.p>
 
@@ -119,7 +119,7 @@ const Hero = () => {
         >
           {[
             { icon: Heart, label: 'Soins experts & bienveillants' },
-            { icon: Shield, label: "Diplôme d'infirmière" },
+            { icon: Shield, label: "Diplôme d'assistante infirmière" },
             { icon: Sparkles, label: 'Disponible 24/7' },
           ].map(({ icon: Icon, label }) => (
             <div

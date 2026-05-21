@@ -121,10 +121,10 @@ const Contact = () => {
             <div className="grid md:grid-cols-1 gap-6 xs:gap-8 items-center">
               <div>
                 <h3 className="text-xl xs:text-2xl md:text-3xl font-sora font-bold text-petrol mb-3 xs:mb-4">
-                  Contactez l'Infirmière
+                  Contactez l'Assistante
                 </h3>
                 <p className="text-gray-600 font-montserrat text-sm xs:text-base mb-4 xs:mb-6">
-                  Fatima Ezahraa, assistante infirmière diplômée, est disponible pour répondre à vos questions et planifier vos soins à domicile.
+                  Notre assistante infirmière diplômée est disponible pour répondre à vos questions et planifier vos soins à domicile.
                 </p>
                 <a
                   href="https://wa.me/212690204408"

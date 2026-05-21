@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       name: 'Mme Benali',
       role: 'Patient',
-      content: 'L\'infirmière est très professionnelle et douce. Les soins à domicile sont parfaits pour ma mère âgée. Je recommande vivement.',
+      content: 'L\'assistante infirmière est très professionnelle et douce. Les soins à domicile sont parfaits pour ma mère âgée. Je recommande vivement.',
       rating: 5,
       avatar: 'MB',
       color: 'from-petrol to-petrol-dark',
@@ -14,7 +14,7 @@ const Testimonials = () => {
     {
       name: 'M. El Fassi',
       role: 'Famille',
-      content: 'Service exceptionnel! L\'infirmière est venue en urgence pour une perfusion. Très réactive et compétente. Merci pour votre disponibilité.',
+      content: 'Service exceptionnel! L\'assistante infirmière est venue en urgence pour une perfusion. Très réactive et compétente. Merci pour votre disponibilité.',
       rating: 5,
       avatar: 'EF',
       color: 'from-wellness to-wellness-dark',
@@ -22,7 +22,7 @@ const Testimonials = () => {
     {
       name: 'Fatima T.',
       role: 'Patient',
-      content: 'Les prises de sang à domicile sont beaucoup plus confortables. Fatima Ezahraa est très douce et professionnelle. Un accompagnement de qualité, ça se voit!',
+      content: 'Les prises de sang à domicile sont beaucoup plus confortables. L\'assistante infirmière est très douce et professionnelle. Un accompagnement de qualité, ça se voit!',
       rating: 5,
       avatar: 'FT',
       color: 'from-petrol to-wellness',
@@ -30,7 +30,7 @@ const Testimonials = () => {
     {
       name: 'Dr. Kabbaj',
       role: 'Médecin',
-      content: 'Je recommande LUNAVITA CARE à mes patients. L\'infirmière est très compétente et les soins sont réalisés avec professionnalisme.',
+      content: 'Je recommande LUNAVITA CARE à mes patients. L\'assistante infirmière est très compétente et les soins sont réalisés avec professionnalisme.',
       rating: 5,
       avatar: 'DK',
       color: 'from-petrol-dark to-petrol',

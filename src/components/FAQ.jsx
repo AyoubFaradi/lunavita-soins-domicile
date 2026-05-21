@@ -8,11 +8,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Comment prendre rendez-vous?',
-      answer: 'Vous pouvez prendre rendez-vous directement via WhatsApp en cliquant sur le bouton "Contacter" sur notre site. Notre infirmière vous répondra rapidement pour fixer un rendez-vous à domicile.',
+      answer: 'Vous pouvez prendre rendez-vous directement via WhatsApp en cliquant sur le bouton "Contacter" sur notre site. Notre assistante infirmière vous répondra rapidement pour fixer un rendez-vous à domicile.',
     },
     {
       question: 'Proposez-vous le déplacement à domicile?',
-      answer: 'Oui, nous nous déplaçons directement chez vous pour tous les soins infirmiers. Notre infirmière se rend à votre domicile pour votre confort et votre bien-être.',
+      answer: 'Oui, nous nous déplaçons directement chez vous pour tous les soins infirmiers. Notre assistante infirmière se rend à votre domicile pour votre confort et votre bien-être.',
     },
     {
       question: 'Quelles sont les zones couvertes?',
@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: 'Quelle est votre disponibilité?',
-      answer: 'Notre infirmière est disponible 24h/24 et 7j/7 pour les urgences. Pour les rendez-vous programmés, nous nous adaptons à vos horaires.',
+      answer: 'Notre assistante infirmière est disponible 24h/24 et 7j/7 pour les urgences. Pour les rendez-vous programmés, nous nous adaptons à vos horaires.',
     },
     {
       question: 'Quels types de soins proposez-vous?',
@@ -28,7 +28,7 @@ const FAQ = () => {
     },
     {
       question: 'Qui réalise les soins à domicile?',
-      answer: 'Fatima Ezahraa est assistante infirmière diplômée. Elle met son savoir-faire et sa bienveillance au service de tous types de soins infirmiers à domicile.',
+      answer: 'Notre assistante infirmière est diplômée. Elle met son savoir-faire et sa bienveillance au service de tous types de soins infirmiers à domicile.',
     },
   ];
 
